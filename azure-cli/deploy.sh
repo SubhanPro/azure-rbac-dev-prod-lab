@@ -20,3 +20,21 @@ az group create \
   --location "$LOCATION"
 
 echo "Created resource groups:"
+
+---------------------------------------------------
+
+echo "Creating DEV Storage..."
+
+az storage account create \
+--name oceandevstorage888 \
+--resource-group OCEAN-DEV \
+--location "$LOCATION" \
+--sku Standard_LRS
+
+echo "Creating PROD Storage..."
+
+az storage account create \
+--name oceanprodstorage888 \
+--resource-group OCEAN-PROD \
+--location "$LOCATION" \
+--sku Standard_LRS
