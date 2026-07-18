@@ -27,10 +27,10 @@ All resources are created using scripts, allowing repeatable and consistent depl
 azure-cli/
     deploy.sh
     cleanup.sh
+    storage-containers.sh
 
 powershell/
     deploy.ps1
-    cleanup.ps1
 
 docs/
 
